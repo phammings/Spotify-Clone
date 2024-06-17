@@ -7,6 +7,7 @@ import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 
+import useAuthModal from "@/hooks/useAuthModal";
 import Button from "@/components/Button";
 
 interface HeaderProps {
@@ -18,6 +19,7 @@ const Header: React.FC<HeaderProps> = ({
     children,
     className
 }) => {
+    const authModel = useAuthModal();
     const router = useRouter();
 
     const handleLogout = () => {
@@ -108,6 +110,7 @@ const Header: React.FC<HeaderProps> = ({
                     <>
                         <div>
                             <Button
+                                onClick={authModel.onOpen}
                                 className="
                                     bg-transparent
                                     text-neutral-300
@@ -119,7 +122,7 @@ const Header: React.FC<HeaderProps> = ({
                         </div>
                         <div>
                             <Button
-                                onClick={() => {}}
+                                onClick={authModel.onOpen}
                                 className="
                                     bg-white
                                     px-6
