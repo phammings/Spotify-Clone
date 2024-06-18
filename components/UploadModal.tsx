@@ -85,7 +85,6 @@ const UploadModal = () => {
                 });
 
             if (imageError) {
-                console.error(imageError);
                 setIsLoading(false);
                 return toast.error("Failed image upload.");
             }
