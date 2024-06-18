@@ -58,7 +58,7 @@ const UploadModal = () => {
             //  Upload song
             const {
                 data: songData,
-                error: songError
+                error: songError,
             } = await supabaseClient
                 .storage 
                 .from("songs")
@@ -75,7 +75,7 @@ const UploadModal = () => {
             //  Upload image
             const {
                 data: imageData,
-                error: imageError
+                error: imageError,
             } = await supabaseClient
                 .storage 
                 .from("images")
@@ -85,6 +85,7 @@ const UploadModal = () => {
                 });
 
             if (imageError) {
+                console.error(imageError);
                 setIsLoading(false);
                 return toast.error("Failed image upload.");
             }
