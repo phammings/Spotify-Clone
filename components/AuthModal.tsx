@@ -29,7 +29,7 @@ const AuthModal = () => {
     }
   };
   return (
-    <Modal title="Wellcome back" description="Login to your account" isOpen={isOpen} onChange={onChange}>
+    <Modal title="Welcome back" description="Login to your account" isOpen={isOpen} onChange={onChange}>
       <Auth
         theme="dark"
         providers={["github"]}
