@@ -53,7 +53,7 @@ const AuthModal = () => {
       <div className="flex justify-center items-center">
         {view === "sign_in" ? (
           <p>
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <span 
               onClick={() => setView("sign_up")} 
               style={{ cursor: "pointer", color: "#22c55e" }}
