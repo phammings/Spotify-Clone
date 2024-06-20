@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import AuthModal from "@/components/AuthModal";
+import AuthModalSignup from "@/components/AuthModalSignup";
 import UploadModal from "@/components/UploadModal";
 import SubscribeModal from "@/components/SubscribeModal";
 
@@ -27,6 +28,7 @@ const ModalProvider: React.FC<ModalProviderProps> = ({
   return (
     <>
         <AuthModal />
+        <AuthModalSignup />
         <UploadModal />
         <SubscribeModal products={products} />
     </>

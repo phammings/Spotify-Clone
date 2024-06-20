@@ -11,6 +11,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { toast } from "react-hot-toast";
 
 import useAuthModal from "@/hooks/useAuthModal";
+import useAuthModalSignup from "@/hooks/useAuthModalSignup";
 import { useUser } from "@/hooks/useUser";
 import usePlayer from "@/hooks/usePlayer";
 
@@ -26,6 +27,7 @@ const Header: React.FC<HeaderProps> = ({
     className
 }) => {
     const authModel = useAuthModal();
+    const authModelSignup = useAuthModalSignup();
     const router = useRouter();
     const player = usePlayer();
 
@@ -150,7 +152,7 @@ const Header: React.FC<HeaderProps> = ({
                         <>
                             <div>
                                 <Button
-                                    onClick={authModel.onOpen}
+                                    onClick={() => authModelSignup.onOpen("sign_up")}
                                     className="
                                         bg-transparent
                                         text-neutral-300
@@ -162,7 +164,7 @@ const Header: React.FC<HeaderProps> = ({
                             </div>
                             <div>
                                 <Button
-                                    onClick={authModel.onOpen}
+                                    onClick={() => authModel.onOpen("sign_in")}
                                     className="
                                         bg-white
                                         px-6

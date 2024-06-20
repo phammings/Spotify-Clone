@@ -8,13 +8,13 @@ import { useEffect, useState } from "react";
 
 import Modal from "./Modal";
 
-import useAuthModal from "@/hooks/useAuthModal";
+import useAuthModalSignup from "@/hooks/useAuthModalSignup";
 
 const AuthModal = () => {
   const supabaseClient = useSupabaseClient();
   const router = useRouter();
   const { session } = useSessionContext();
-  const { onClose, isOpen, view: initialView } = useAuthModal();
+  const { onClose, isOpen, view: initialView } = useAuthModalSignup();
 
   let [view, setView] = useState<ViewType>(initialView);
 

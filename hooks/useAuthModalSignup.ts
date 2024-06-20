@@ -10,8 +10,8 @@ interface AuthModalStore {
 
 const useAuthModal = create<AuthModalStore>((set) => ({
   isOpen: false,
-  view: "sign_in",
-  onOpen: (initialView = "sign_in") => set({ isOpen: true, view: initialView }),
+  view: "sign_up",
+  onOpen: (initialView = "sign_up") => set({ isOpen: true, view: initialView }),
   onClose: () => set({ isOpen: false }),
 }));
 
