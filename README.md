@@ -83,7 +83,7 @@ This project aims to provide a comprehensive example of building a production-re
 ##### Cloning the repository
 
 ```shell
-git clone https://github.com/ajfm88/spotify-clone.git
+git clone https://github.com/phammings/Spotify-Clone.git
 ```
 
 ##### Install packages
