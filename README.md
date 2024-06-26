@@ -37,7 +37,7 @@ The backend is powered by Supabase, an open-source Firebase alternative built on
 
 This project aims to provide a comprehensive example of building a production-ready music streaming application, covering key aspects such as authentication, data management, and payment processing.
 
-## [Live Demo 🔗](spotify.ryanlepham.com)
+## [Live Demo 🔗](https://spotify.ryanlepham.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
