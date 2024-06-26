@@ -110,6 +110,15 @@ STRIPE_WEBHOOK_SECRET=
 npm run dev
 ```
 
+#### Testing with Stripe Payment
+
+Credit Card Number:
+```
+4242 4242 4242 4242
+```
+
+For the rest of the payment method details: choose any valid details (i.e. expiry date must be a future date).
+
     
 
 
@@ -119,7 +128,7 @@ npm run dev
 
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next.js-url]: https://nextjs.org/
-[Tailwind CSS]: https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss
+[Tailwind CSS]: https://img.shields.io/badge/tailwindcss-000000?style=for-the-badge&logo=tailwindcss&logoColor=blue
 [Tailwind CSS-url]: https://tailwindcss.com/
 [Supabase]: https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white
 [Supabase-url]: https://supabase.com/
