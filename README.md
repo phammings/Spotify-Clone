@@ -59,13 +59,11 @@ This project aims to provide a comprehensive example of building a production-re
 <!-- ROADMAP -->
 ## Roadmap
 
-- ✔️ Implement user authentication with Supabase
 - ✔️ Add song uploading functionality
-- ✔️ Develop a dynamic frontend using Next.js and React
-- ✔️ Build a robust backend with Supabase and PostgreSQL
-- ✔️ Integrate Stripe for subscription management
 - ✔️ Implement playlist creation and management
-- ✔️ Test application features with Jest and React Testing Library
+- ✔️ Develop a dynamic frontend using Next.js and React
+- ✔️ Implement user authentication and backend with Supabase (PostgreSQL)
+- ✔️ Integrate Stripe for subscription management
 - ✔️ Utilize Tailwind CSS for modern styling and design
 - ✔️ Deployed on Vercel with custom domain from AWS Route53
 
